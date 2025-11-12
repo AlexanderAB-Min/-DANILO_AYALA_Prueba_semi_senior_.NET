@@ -3,7 +3,7 @@ Aplicación To-Do List desarrollada con Angular 17 y .NET 9, que permite gestion
 
 # 🧾 To-Do List App — Angular 17 + .NET 9 (Full Stack)
 
-Proyecto desarrollado como prueba técnica para el cargo **Desarrollador Semi Senior**, utilizando **Angular 17** en el frontend y **ASP.NET Core 9** en el backend.
+Proyecto desarrollado como prueba técnica para el cargo Desarrollador Semi Senior, utilizando Angular 17 en el frontend y ASP.NET Core 9 en el backend.
 
 ---
 
@@ -13,8 +13,8 @@ Evaluar las habilidades técnicas para el desarrollo full-stack con Angular y .N
 ---
 
 ## 🧠 Descripción del Proyecto
-Aplicación tipo **To-Do List** que permite gestionar tareas con autenticación de usuario.  
-Los usuarios pueden **crear, editar, eliminar y marcar tareas como completadas**, además de visualizar **métricas** de estado general.
+Aplicación tipo To-Do List que permite gestionar tareas con autenticación de usuario.  
+Los usuarios pueden crear, editar, eliminar y marcar tareas como completadas, además de visualizar métricas de estado general.
 
 ### 🔹 Funcionalidades principales
 - **Inicio de sesión** con autenticación basada en **JWT** (JSON Web Tokens).  
@@ -98,7 +98,7 @@ Antes de ejecutar el proyecto asegúrate de tener instalado:
 
 ### 🔸 1. Clonar el repositorio
 bash
-git clone https://github.com/tuusuario/ToDoList-Angular-Net9.git
+git clone https://github.com/tuusuario/ToDoList-Angular-Net9.git](https://github.com/AlexanderAB-Min/-DANILO_AYALA_Prueba_semi_senior_.NET
 cd ToDoList-Angular-Net9
 
 2. Backend (.NET 9)
