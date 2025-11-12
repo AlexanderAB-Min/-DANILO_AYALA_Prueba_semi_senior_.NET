@@ -1,0 +1,85 @@
+<div class="card-container">
+     <mat-card>
+          <mat-card-header>
+               <div class="titulo-lista">
+                    <mat-card-title>Lista de Tareas</mat-card-title>
+               </div>
+          </mat-card-header>
+
+          <mat-card-content>
+
+               <!-- ✅ Sección de métricas -->
+               <div class="metricas-container">
+                    <mat-card class="metrica-card total">
+                         <mat-card-title>Total de tareas</mat-card-title>
+                         <mat-card-content>{{ totalTareas }}</mat-card-content>
+                    </mat-card>
+                    <mat-card class="metrica-card completadas">
+                         <mat-card-title>Tareas completadas</mat-card-title>
+                         <mat-card-content>{{ tareasCompletadas }}</mat-card-content>
+                    </mat-card>
+                    <mat-card class="metrica-card pendientes">
+                         <mat-card-title>Tareas pendientes</mat-card-title>
+                         <mat-card-content>{{ tareasPendientes }}</mat-card-content>
+                    </mat-card>
+               </div>
+
+               <!-- Botón para crear tarea -->
+               <button mat-raised-button color="primary" (click)="abrirCrear()" style="margin-bottom: 16px;">
+                    <mat-icon>add</mat-icon> Crear Tarea
+               </button>
+
+               <!-- Filtro por estado -->
+               <mat-form-field appearance="fill" style="margin-bottom: 16px; width: 200px;">
+                    <mat-label>Filtrar por estado</mat-label>
+                    <mat-select [(value)]="filtroEstado" (selectionChange)="aplicarFiltro()">
+                         <mat-option value="todas">Todas</mat-option>
+                         <mat-option value="completadas">Completadas</mat-option>
+                         <mat-option value="pendientes">Pendientes</mat-option>
+                    </mat-select>
+               </mat-form-field>
+
+               <!-- Tabla -->
+               <table mat-table [dataSource]="listaProductoFiltrada" class="mat-elevation-z8">
+
+                    <ng-container matColumnDef="nombre">
+                         <th mat-header-cell *matHeaderCellDef> Nombre tarea </th>
+                         <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="marca">
+                         <th mat-header-cell *matHeaderCellDef> Responsable </th>
+                         <td mat-cell *matCellDef="let element"> {{element.marca}} </td>
+                    </ng-container>
+
+                    <!-- ✅ Estado: un solo ícono interactivo -->
+                    <ng-container matColumnDef="completada">
+                         <th mat-header-cell *matHeaderCellDef> Estado </th>
+                         <td mat-cell *matCellDef="let element" class="estado-columna">
+                              <button mat-icon-button (click)="toggleCompletada(element)"
+                                   [color]="element.completada ? 'primary' : 'warn'">
+                                   <mat-icon>
+                                        {{ element.completada ? 'check_circle' : 'radio_button_unchecked' }}
+                                   </mat-icon>
+                              </button>
+                         </td>
+                    </ng-container>
+
+                    <ng-container matColumnDef="acciones">
+                         <th mat-header-cell *matHeaderCellDef> Acciones </th>
+                         <td mat-cell *matCellDef="let element">
+                              <button mat-icon-button color="accent" (click)="abrirEditar(element)">
+                                   <mat-icon>edit</mat-icon>
+                              </button>
+                              <button mat-icon-button color="warn" (click)="eliminar(element)">
+                                   <mat-icon>delete</mat-icon>
+                              </button>
+                         </td>
+                    </ng-container>
+
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+               </table>
+          </mat-card-content>
+     </mat-card>
+</div>

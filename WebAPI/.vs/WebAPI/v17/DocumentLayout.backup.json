@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Danilo\\Desktop\\PRUEBA TECNICA\\Proyecto web\\WebAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{56FC1687-E2A0-49C6-9228-437543CDF359}|WebAPI.csproj|c:\\users\\danilo\\desktop\\prueba tecnica\\proyecto web\\webapi\\models\\dbpruebacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56FC1687-E2A0-49C6-9228-437543CDF359}|WebAPI.csproj|solutionrelative:models\\dbpruebacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{56FC1687-E2A0-49C6-9228-437543CDF359}|WebAPI.csproj|c:\\users\\danilo\\desktop\\prueba tecnica\\proyecto web\\webapi\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{56FC1687-E2A0-49C6-9228-437543CDF359}|WebAPI.csproj|solutionrelative:controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DbpruebaContext.cs",
+              "DocumentMoniker": "C:\\Users\\Danilo\\Desktop\\PRUEBA TECNICA\\Proyecto web\\WebAPI\\Models\\DbpruebaContext.cs",
+              "RelativeDocumentMoniker": "Models\\DbpruebaContext.cs",
+              "ToolTip": "C:\\Users\\Danilo\\Desktop\\PRUEBA TECNICA\\Proyecto web\\WebAPI\\Models\\DbpruebaContext.cs",
+              "RelativeToolTip": "Models\\DbpruebaContext.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAqwCcAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T12:36:12.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductoController.cs",
+              "DocumentMoniker": "C:\\Users\\Danilo\\Desktop\\PRUEBA TECNICA\\Proyecto web\\WebAPI\\Controllers\\ProductoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductoController.cs",
+              "ToolTip": "C:\\Users\\Danilo\\Desktop\\PRUEBA TECNICA\\Proyecto web\\WebAPI\\Controllers\\ProductoController.cs",
+              "RelativeToolTip": "Controllers\\ProductoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T12:29:12.25Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

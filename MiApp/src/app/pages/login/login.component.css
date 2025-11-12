@@ -1,0 +1,28 @@
+/* Nuevo estilo para el título */
+.title-container {
+     text-align: center; /* Centra el texto horizontalmente */
+     margin-top: 50px; /* Espacio encima del título (ajusta según necesites) */
+     margin-bottom: 20px; /* Espacio debajo del título antes de la tarjeta */
+}
+
+.title-container h1 {
+     font-size: 2rem; /* Tamaño de fuente grande para destacar */
+     color: #333; /* Color del texto (ajusta al tema de tu app) */
+     font-weight: bold; /* Negrita para énfasis */
+}
+
+.card-container {
+     display: flex;
+     justify-content: center; /* Centrar horizontalmente */
+     align-items: center; /* Centrar verticalmente */
+     margin-top: 0; /* Reduce o elimina el margin-top original, ya que ahora hay espacio del título */
+}
+
+.form-custom {
+     min-width: 150px;
+     width: 100%;
+}
+
+.input-custom {
+     width: 100%;
+}

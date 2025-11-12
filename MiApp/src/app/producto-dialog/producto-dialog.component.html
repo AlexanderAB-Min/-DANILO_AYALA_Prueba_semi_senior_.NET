@@ -1,0 +1,25 @@
+<h2 mat-dialog-title>{{ isEdit ? 'Editar Tarea' : 'Crear Tarea' }}</h2>
+<mat-dialog-content>
+     <form [formGroup]="form">
+          <mat-form-field appearance="fill" class="full-width">
+               <mat-label>Nombre de la tarea</mat-label>
+               <input matInput formControlName="nombre">
+               <mat-error *ngIf="form.get('nombre')?.invalid">Nombre requerido</mat-error>
+          </mat-form-field>
+
+          <mat-form-field appearance="fill" class="full-width">
+               <mat-label>Responsable</mat-label>
+               <input matInput formControlName="marca">
+               <mat-error *ngIf="form.get('marca')?.invalid">Responsable requerido</mat-error>
+          </mat-form-field>
+
+          <mat-checkbox formControlName="completada" class="full-width">
+               Marcar como completada
+          </mat-checkbox>
+     </form>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+     <button mat-button (click)="cancelar()">Cancelar</button>
+     <button mat-raised-button color="primary" (click)="guardar()" [disabled]="form.invalid">Guardar</button>
+</mat-dialog-actions>

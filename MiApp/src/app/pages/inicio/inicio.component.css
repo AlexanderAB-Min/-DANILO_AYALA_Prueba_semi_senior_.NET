@@ -1,0 +1,54 @@
+
+.card-container {
+     margin: auto;
+     margin-top: 100px;
+     width: 70%;
+}
+
+/* ✅ Título centrado y más grande */
+.titulo-lista {
+     width: 100%;
+     text-align: center;
+}
+
+.titulo-lista mat-card-title {
+     font-size: 30px;
+     font-weight: 700;
+     color: #1a237e;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     margin-bottom: 10px;
+}
+
+/* ✅ Estilos para las métricas */
+.metricas-container {
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 20px;
+}
+
+.metrica-card {
+     flex: 1;
+     margin: 0 10px;
+     text-align: center;
+     padding: 10px;
+     border-radius: 10px;
+     color: white;
+}
+
+.metrica-card.total {
+     background-color: #3f51b5;
+}
+
+.metrica-card.completadas {
+     background-color: #4caf50;
+}
+
+.metrica-card.pendientes {
+     background-color: #f44336;
+}
+
+/* ✅ Centra el ícono del estado */
+.estado-columna {
+     text-align: center;
+}
